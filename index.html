@@ -14,7 +14,9 @@
     <title>Edi Github</title>
   </head>
   <body>
-    <div id="containerMain">
+    <!-- container penampung semua element setelah body -->
+    <div id="container-main">
+      <!-- header -->
       <header>
         <div id="domainname">Marojahan.domain</div>
         <nav>
@@ -25,27 +27,34 @@
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
+        <hr />
       </header>
+      <!-- main content  -->
       <main>
+        <!-- About Me -->
         <section id="about-me">
           <div id="welcome">
             <div class="border"></div>
             <h1>Welcome To My Website</h1>
-            <hr />
+            <hr class="hr1" />
             <p>
               <span>Saya?</span><br />
-              Saya? Halo !. Saya merupakan mahasiswa TI aktif di Universitas
-              Bina Insani Bekasi, dan baru mulai tertarik dengan teknologi web
-              di tahun 2022. <br /><span>Salam Kenal : D</span>
+              Halo !. Saya merupakan mahasiswa TI aktif di Universitas Bina
+              Insani Bekasi, dan baru mulai tertarik dengan teknologi web di
+              tahun 2022. <br /><span>Salam Kenal : D</span>
             </p>
           </div>
           <div id="detail">
             <div class="border"></div>
             <h3>Detail</h3>
-            <p>
-              Nama <br />Junaedi Marojahan Gultom <br />Umur <br />21 tahun
-              <br />Domisili <br />Kota Bekasi Jawa Barat
-            </p>
+            <ul>
+              <li><span>Nama</span><br />Junaedi Marojahan Gultom</li>
+              <li>
+                <span>Umur</span><br />
+                21tahun
+              </li>
+              <li><span>Domisili</span><br />Kota Bekasi Jawa Barat</li>
+            </ul>
           </div>
           <div id="my-foto">
             <div class="border"></div>
@@ -54,10 +63,70 @@
             </div>
           </div>
         </section>
-        <section id="skill">skill</section>
-        <section id="project">project</section>
-        <section id="contact">contact</section>
+        <!-- Skill -->
+        <section id="skill">
+          <div class="container-skill">
+            <hr />
+            <h2>Skill</h2>
+            <div id="container-card">
+              <div class="card">
+                <div class="img">
+                  <img src="assets/img/css.png" alt="" srcset="" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img src="assets/img/html.png" alt="" srcset="" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img src="assets/img/js.png" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </section>
+        <br /><br />
+        <!-- project -->
+        <section id="project">
+          <div id="container-project">
+            <h3>Project</h3>
+            <p>Ini Merupakan Project Pertama Saya . . .</p>
+            <p>Sementara masih belum responsive tersedia hanya untuk desktop</p>
+          </div>
+        </section>
+        <!-- contact -->
+        <section id="contact">
+          <hr />
+          <h2>Contact</h2>
+          <div id="container-contact">
+            <div class="keterangan">
+              <div class="img"><img src="assets/img/message.png" alt="" /></div>
+              <p>Kirimkan email anda jika ada yang ingin di tanyakan</p>
+            </div>
+            <div class="container-input">
+              <input type="text" class="input" placeholder="Nama" />
+              <input type="text" class="input" placeholder="Email" />
+              <textarea class="input-pesan" placeholder="Pesan"></textarea>
+              <button>kirim</button>
+            </div>
+          </div>
+        </section>
+        <br /><br /><br /><br /><br /><br />
       </main>
+      <footer>
+        <div id="container-footer">
+          <hr>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Telegram</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 </html>
