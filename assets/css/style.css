@@ -1,3 +1,9 @@
+
+/* font yang digunakan
+font-family: 'Archivo', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
 *,
 html {
   margin: 0;
@@ -6,69 +12,77 @@ html {
   font-family: "Archivo", sans-serif;
 }
 
-/* font-family: 'Archivo', sans-serif;
-font-family: 'Manrope', sans-serif;
-font-family: 'Poppins', sans-serif; */
-
 body {
-  padding: 0 min(100px);
+  padding: 0 min(10vw);
   background-color: #24292d;
 }
 
-p {
-  margin: 10px 0;
+p,
+span,
+li,
+a,
+h1,
+h2,
+h3,
+button,
+input,
+textarea {
+  font-size: 1.3vw;
 }
 
-header {
+
+header .container-header {
   display: flex;
   border-left: 1px solid white;
   border-right: 1px solid white;
   background-color: #2b3137;
-  padding: 30px 30px;
+  padding: 3vw 3vw;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
-header div#domainname {
+header .container-header div#domainname h1 {
   color: #2fbbff;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
-header nav ul {
+header .container-header nav ul {
   display: flex;
-  gap: 20px;
+  gap: 1vw;
 }
 
-header nav ul li {
+header .container-header nav ul li {
   list-style: none;
 }
 
-header nav ul li a {
+header .container-header nav ul li a {
   display: inline-block;
-  width: 80px;
-  padding: 9px 7px;
-  border: 1px solid white;
-  border-radius: 7px;
+  width: 7vw;
+  padding: 0.6vw 1vw;
+  border: 0.1vw solid white;
+  border-radius: 0.6vw;
   font-family: "Archivo", sans-serif;
-  font-size: 14px;
+  /* font-size: 14px; */
   text-decoration: none;
   text-align: center;
   font-weight: bold;
 }
 
-header nav ul li a:hover {
+header .container-header nav ul li a:hover {
   background-color: #2fbb4d;
   border-color: #2fbb4d;
 }
 
-header hr {
+header .container-header hr {
   width: 30%;
+  height: 0.1vw;
+  background-color: white;
   position: absolute;
   right: 0;
-  transform: translateY(40px);
+  transform: translateY(3.5vw);
 }
 
 /* awal dari section  about me  */
@@ -83,7 +97,7 @@ main section#about-me {
 }
 
 main section#about-me #welcome {
-  padding: 30px;
+  padding: 3vw;
   grid-area: 1 / 1 / 2/ 3;
   background-color: #2b3137;
   font-weight: bold;
@@ -103,12 +117,11 @@ main section#about-me #welcome .border {
 }
 
 main section#about-me #welcome hr {
-  width: 50%;
-  height: 2px;
+  height: 0.1vw;
   background-color: white;
 }
 
-main section#about-me #welcome h1 {
+main section#about-me #welcome h2 {
   color: #0d74e7;
   font-family: "Manrope", sans-serif;
 }
@@ -136,7 +149,7 @@ main section#about-me #my-foto .border {
 }
 
 main section#about-me #my-foto #img {
-  width: 300px;
+  width: 50%;
   margin: 0 auto;
   position: absolute;
   left: 0;
@@ -153,7 +166,7 @@ main section#about-me #my-foto #img img {
 }
 
 main section#about-me #detail {
-  padding: 20px;
+  padding: 2vw;
   grid-area: 2 / 2 / 3 / 4;
   background-color: #2b3137;
 
@@ -161,7 +174,7 @@ main section#about-me #detail {
 }
 
 main section#about-me #detail ul {
-  padding-left: 20px;
+  padding-left: 2vw;
 }
 main section#about-me #detail .border {
   width: 100%;
@@ -177,7 +190,7 @@ main section#about-me #detail .border {
 /* awal dari section skill   */
 
 section#skill {
-  margin: 100px 0 0;
+  margin: 8vw 0 0;
 }
 
 section#skill .container-skill {
@@ -197,16 +210,21 @@ section#skill #container-card {
   justify-content: space-around;
 }
 
+section#skill hr{
+  height: 0.1vw;
+  background-color: white;
+}
+
 section#skill hr:nth-of-type(1) {
   width: 60%;
   position: relative;
-  transform: translate(-52%, -50px);
+  transform: translate(-20vw, -4vw);
 }
 
 section#skill hr:nth-of-type(2) {
   width: 60%;
   position: relative;
-  transform: translate(52.2%, 50px);
+  transform: translate(20vw, 4vw);
 }
 
 section#skill #container-card .card {
@@ -256,11 +274,11 @@ section#contact {
   margin: 80px 0 0;
 }
 
-section#contact hr{
+section#contact hr {
   width: 33%;
 }
 
-section#contact h2{
+section#contact h2 {
   margin-bottom: 40px;
   text-align: center;
 }
@@ -268,59 +286,57 @@ section#contact #container-contact {
   border: 1px solid black;
   margin: 0 auto;
   width: 59%;
-  height: 300px; 
   display: flex;
   background-color: white;
 }
 
 #container-contact .keterangan {
-  padding: 0 20px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 35%;
   text-align: center;
-  background-color: #2B3137;
+  background-color: #2b3137;
 }
 
-#container-contact .keterangan .img{
+#container-contact .keterangan .img {
   width: 70%;
 }
 
-#container-contact .keterangan .img img{
+#container-contact .keterangan .img img {
   width: 100%;
 }
 
-#container-contact .container-input{
+#container-contact .container-input {
   width: 100%;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
 }
 
-#container-contact .container-input .input{
+#container-contact .container-input .input {
   width: 80%;
   height: 30px;
   color: black;
 }
 
-#container-contact .container-input .input-pesan{
+#container-contact .container-input .input-pesan {
   width: 80%;
   height: 90px;
   color: black;
 }
 
-#container-contact .container-input button{
+#container-contact .container-input button {
   width: 80px;
   padding: 9px 7px;
   border: 1px solid white;
   border-radius: 7px;
   font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  background-color: #2B3137;
+  background-color: #2b3137;
   font-weight: bold;
 }
 
@@ -334,29 +350,29 @@ footer {
   width: 100%;
 }
 
-#container-footer{
+#container-footer {
   width: 100%;
 }
 
-footer #container-footer ul{
+footer #container-footer ul {
   width: max-content;
   margin-left: auto;
   margin-right: auto;
   list-style: none;
 }
 
-footer #container-footer ul li{
+footer #container-footer ul li {
   padding: 20px;
   display: inline-block;
-  
 }
-footer #container-footer ul li a{
-  
+footer #container-footer ul li a {
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -369,11 +385,12 @@ footer #container-footer ul li a{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   body {
     background-color: #24292d;
   }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {
-
-} */
